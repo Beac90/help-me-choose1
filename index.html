@@ -1,26 +1,48 @@
-<!doctype html>
-<html lang=sv>
- <head>
-  <meta charset="utf-8">
-  <title> help me choose </title>
-  <link href="main.css" rel="stylesheet" type="text/css">
+    <!doctype html>
+    <html lang=sv>
+     <head>
+      <meta charset="utf-8">
+      <title> help me choose </title>
+      <link href="main.css" rel="stylesheet" type="text/css">
 
- </head>
+        </head>
 
 
-  <body>
-  <h1><font color="pink">Help me choose between...</font></h1>
-  <div class="inputSection">
+      <body>
 
-    <div>
-     <input placeholder="something"></input>
 
-    </div>
-<button> This is a button </button>
-  </div>
-  <button> This is the second button </button>
+     <h1><font color="pink">Help me choose between...</font></h1>
+        <div class="inputSection">
 
-  </body>
+        <div class="inputs">
+
+          <input placeholder="something"></input>
+
+      </div>
+        <button class="addOption"> This is a button </button>
+     </div>
+
+ <div class="resultSection"></div>
+
+       <button> Go! </button>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+      <script>
+
+        $(function(){
+          $('.resultSection').hide()
+
+          var add_option = function(){
+            $('.inputs').append ('<input></input>')
+          }
+          $('.addOption').click(add_option)
+
+        })
+
+      </script>
+
+      </body>
 
 
 
