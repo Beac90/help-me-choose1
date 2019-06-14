@@ -5,9 +5,9 @@ body{
   justify-content: center;
   align-items: center;
   margin-top: 150px;
+  background-size: 100%;
   background-image: url("tim-mossholder-666709-unsplash.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
 
 }
 h1{
@@ -15,6 +15,7 @@ h1{
   font-size: 40px;
   letter-spacing: 2px;
   margin-bottom: 0px;
+
 
 }
 .inputSection{
@@ -34,5 +35,15 @@ margin-top: 10px;
 }
 .addOption{
 margin-top: 10px;
+
+}
+.resultSection{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: green;
+  font-weight: bolder;
 
 }
